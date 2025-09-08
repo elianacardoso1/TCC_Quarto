@@ -93,12 +93,12 @@ O arquivo `article/tex_files/doc_class.tex` contém todos os pacotes, funções 
 Clone o repositório:
 
 
-git clone https://github.com/elianacardoso1/TCC_Quarto_Abnt.git
+git clone https://github.com/elianacardoso1/TCC_Quarto.git
 
 
 Acesse a pasta do projeto:
 ```{sh}
-cd TCC_Quarto_Abnt
+cd TCC_Quarto
 ```
 
 Abra o projeto no seu editor de código preferido:
