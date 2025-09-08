@@ -23,7 +23,7 @@ article
     └── doc-class.tex
 ```
 
-O arquivo `main.qmd` concentra quase todo código e texto do artigo. Esse arquivo é formado por um *header* e *chunks* de código.
+O arquivo `tcc.qmd` concentra quase todo código e texto do artigo. Esse arquivo é formado por um *header* e *chunks* de código.
 
 Exemplo de *header* utilizado no artigo:
 
@@ -93,13 +93,13 @@ O arquivo `article/tex_files/doc_class.tex` contém todos os pacotes, funções 
 ## Como utilizar 🧑‍🏫
 Clone o repositório:
 
-```{sh}
-git clone https://github.com/elianacardoso1/TCC_Quarto.git
-```
+
+git clone https://github.com/elianacardoso1/TCC_Quarto_Abnt.git
+
 
 Acesse a pasta do projeto:
 ```{sh}
-cd quarto-abnt
+cd TCC_Quarto_Abnt
 ```
 
 Abra o projeto no seu editor de código preferido:
