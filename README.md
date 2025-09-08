@@ -1,21 +1,4 @@
-<h1 align="center">
-  <img alt="Quarto ABNT" title="Quarto ABNT" src=".github/logo.png" width="300px" />
-</h1>
 
-<p align="center">
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">
-
-
-   <a href="https://www.linkedin.com/in/flaviopangracio/">
-    <img alt="Made by Flávio Pangracio" src="https://img.shields.io/badge/made%20by-Flávio Pangrácio-%2304D361">
-  </a>
-
-  <a href="https://github.com/flaviohugo14/quarto-abnt/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/flaviohugo14/quarto-abnt?style=social">
-  </a>
-</p>
-
----
 
 Quarto ABNT é um template para escrita de artigos científicos com as normas da ABNT que utiliza o [Quarto](https://quarto.org/). O objetivo do projeto é fornecer uma estrutura pré-pronta para que qualquer pesquisador gere estudos reprodutíveis e bem formatados, de forma ágil.
 
