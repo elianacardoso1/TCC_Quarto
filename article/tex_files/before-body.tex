@@ -1,0 +1,191 @@
+% Capa
+\thispagestyle{empty}
+\pagenumbering{roman}
+
+\begin{center}
+    \textbf{\MakeUppercase{$institution$}}\\[0.5em]
+    \textbf{$setor$}\\
+    \textbf{$Departamento$}
+\end{center}
+
+
+\vspace{2.0cm}
+
+
+\begin{center}
+$author$
+
+\vspace{6.cm}
+
+{\textbf{\MakeUppercase{$title$}}}\\[1em]
+{\normalsize $subtitle$}
+\end{center}
+
+\vspace{9.0cm}
+
+
+
+
+
+
+\begin{center}
+
+$city$ 
+
+$year$
+    
+\end{center}
+
+\newpage
+
+
+
+
+% Folha de aprovação
+\thispagestyle{empty}
+
+\begin{center}
+$author-upper$
+\end{center}
+
+\vspace{3.0cm}
+
+\begin{center}
+    {\textbf{\MakeUppercase{$title$}}}\\[1em]
+    {\normalsize $subtitle$}
+\end{center}
+
+\vspace{3.0cm}
+
+\begin{adjustwidth}{7.5cm}{0cm}
+    \justifying
+    $confirm_text$
+\end{adjustwidth}
+
+\vspace{1.0cm}
+
+%APROVADA: $confirm_date$
+
+\vspace{3.5cm}
+
+\centering
+\rule{6cm}{0.4pt} \\
+$advisor-name$ \\
+Orientadora
+
+
+
+\vspace{0.5cm}
+
+\centering
+\rule{6cm}{0.4pt} \\
+$advisor-name2$ \\
+Co-orientadora
+
+\vspace{2.0cm}
+
+\begin{center}
+
+$city$ 
+
+$year$
+    
+\end{center}
+\newpage
+
+
+%\pagestyle{fancy}
+% Dedicatoria
+
+\begin{invisible}
+.
+\end{invisible}
+
+\vspace{28\baselineskip}
+
+\begin{adjustwidth}{7.5cm}{0cm}
+    \justifying
+    \singlespacing
+    $dedication$
+\end{adjustwidth}
+
+
+\newpage
+\pagestyle{fancy}
+
+\newcommand{\resumo}{%
+\titleformat{\section}[block]{\bfseries\filcenter}{}{1em}{}
+}
+\resumo
+
+\section*{AGRADECIMENTO}
+\justify
+
+\begin{invisible}
+.
+\end{invisible}
+
+Agradeço primeiramente a Deus, pela saúde, força e fé que me sustentaram durante toda esta caminhada.
+
+Aos meus pais, Nadil e Luiza, por todo amor, apoio incondicional e por sempre me apoiarem. Às minhas irmãs, por serem minhas melhores amigas.
+
+Aos meus amigos e colegas, pelas conversas, risadas e por me lembrarem de que eu não estava sozinha nesse percurso. Àqueles que torceram por mim, mesmo de longe, o meu carinho e gratidão.
+
+À minha orientadora, Professora Ilka Afonso Reis, pela paciência em me ensinar. Sua orientação foi essencial para a realização deste trabalho.
+
+Agradeço também aos professores e funcionários do Departamento de Estatística da UFMG, pela formação sólida, pelo ambiente de aprendizado e acolhimento —  e à FUMP, que me deu coragem para me mudar para BH com o suporte financeiro que tornou tudo possível.
+
+Por fim, agradeço a mim mesma — por não desistir. Cada desafio superado neste percurso contribuiu não apenas para esta monografia, mas para a pessoa que me tornei.
+
+Muito obrigada!
+
+\newpage
+
+
+% Resumo
+\pagestyle{fancy}
+
+\section*{RESUMO}
+
+
+\begin{spacing}{1.0}
+\justify
+
+\setlength{\parindent}{0pt}
+
+
+Esta monografia tem como objetivo avaliar os impactos da escolha metodológica entre a regressão linear mista e a regressão logística ordinal com efeitos aleatórios na modelagem de variáveis ordinais obtidas por escalas de Likert. Para isso, foi reaplicado o modelo de regressão linear utilizado por Prates et al. (2022) e realizada uma reanálise com a regressão logística ordinal mista, utilizando o mesmo banco de dados. O estudo original investigava o efeito de diferentes modelos de Rotulagem Nutricional Frontal (RNF) — octógono, triângulo e lupa — na percepção de saudabilidade de alimentos supostamente saudáveis por consumidores brasileiros.
+
+Os resultados mostraram que a regressão logística ordinal mista é mais adequada para variáveis com estrutura ordinal, especialmente em contextos com hierarquia nos dados e quando se trata de escalas de Likert. Esse modelo respeita a natureza dos dados e permite a interpretação direta por meio das odds ratios, que não dependem do tamanho da escala. Além disso, foi capaz de capturar efeitos principais e interações que o modelo linear não identificou.
+
+Em termos substantivos, observou-se que todos os modelos de RNF aumentaram a percepção de que os produtos eram pouco saudáveis, sobretudo quando apresentavam nutrientes críticos em excesso e ausência de alegações. Entre os rótulos, o octógono e o triângulo se destacaram como os mais eficazes, em comparação ao modelo da lupa — atualmente adotado no Brasil.
+
+Conclui-se que o modelo ordinal misto oferece uma alternativa metodológica mais robusta para dados provenientes de escalas de classificação, ao mesmo tempo em que os resultados do estudo reforçam a eficácia das estratégias de rotulagem frontal como instrumento de apoio à promoção da saúde pública.
+
+\textbf{Palavras-chave:} $keywords$
+
+\setlength{\parindent}{15pt}
+
+\end{spacing}
+
+\newpage
+% Lista de figuras
+\renewcommand{\listfigurename}{LISTA DE FIGURAS}
+\pagestyle{fancy}
+\listoffigures
+
+\newpage
+% Lista de tabelas
+\renewcommand{\listtablename}{LISTA DE TABELAS}
+\pagestyle{fancy}
+\listoftables
+
+\newpage
+% Sumário
+\renewcommand{\contentsname}{SUMÁRIO}
+\pagestyle{fancy}
+\tableofcontents
+
+\titleformat{\section}{\normalsize\bfseries}{\thesection.}{1em}{}
+\newpage
+\pagenumbering{arabic}

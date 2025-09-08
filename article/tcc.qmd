@@ -1,0 +1,78 @@
+---
+title: "MODELAGEM DA VARIÁVEL ORDINAL COM EFEITO ALEATÓRIO:"
+subtitle: "Comparação entre as abordagens de regressão linear e regressão logística ordinal em um estudo de caso."
+author: "ELIANA CARDOSO GONÇALVES"
+author-upper: "ELIANA CARDOSO GONÇALVES"
+#registration_number: "2021035292"
+institution: "UNIVERSIDADE FEDERAL DE MINAS GERAIS"
+setor: "INSTITUTO DE CIÊNCIAS EXATAS"
+Departamento: "DEPARTAMENTO DE ESTATÍSTICA"
+city: "BELO HORIZONTE"
+state: "MG"
+month: "Junho"
+year: "2025"
+confirm_text: "Monografia apresentada ao Departamento de Estatística da Universidade Federal de Minas Gerais como parte das exigências para obtenção do título de Bacharel em Estatística"
+keywords: "Variável ordinal, Escala de Likert, Regressão Ordinal, Regressão Linear, Efeito Aleatório."
+dedication: "Dedico esta monografia à curiosidade e à busca por compreender o mundo, mesmo sabendo que, como disse o estatístico britânico George Box, “todos os modelos estão errados, mas alguns são úteis”. Que este estudo represente uma tentativa sincera de encontrar utilidade na complexidade dos dados e contribuir, ainda que modestamente, para o conhecimento científico."
+confirm_date: "30/06/2025"
+advisor-name: " Dr. Ilka Afonso Reis"
+advisor-name2: "Dr. Sarah Prates"
+#bibliography: referencies/ref.bib
+csl: cite_styles/abnt.csl
+number-sections: true
+lang: pt-BR
+linkcolor: "black"
+highlight-style: kate
+fig-cap-location: top
+format:
+    pdf:
+        template-partials:
+            - tex_files/before-body.tex
+            - tex_files/doc-class.tex
+        mainfont: "Times New Roman"
+keep-tex: true
+editor: source
+resources: 
+  - "scr.R"
+execute:
+  echo: false
+  warning: false
+editor_options: 
+  chunk_output_type: console
+output:
+  pdf_document: # Change to appropriate LaTeX template
+    includes:
+      in_header: 'gt_packages.sty'
+---
+
+
+
+# INTRODUÇÃO
+
+
+#RESULTADO
+
+
+# CONCLUSÃO
+
+
+\newpage
+
+
+# REFERÊNCIA 
+
+
+\setlength{\parindent}{0pt}
+::: {style="text-indent: 0em;"}
+
+AGRESTI, A. *Analysis of Ordinal Categorical Data*. 2nd ed. Hoboken: Wiley-Interscience, 2010.
+
+AGRESTI, A. *Categorical Data Analysis*. 3rd ed. Hoboken, NJ: John Wiley & Sons, 2013.
+
+
+
+:::
+
+
+
+
