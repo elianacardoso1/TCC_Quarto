@@ -82,7 +82,9 @@ output:
 
 A folha de estilo das citações ABNT é definida no arquivo `article/cite_styles/abnt.csl`, é lá que você precisará alterar para adequar sua citação à uma norma específica.
 
-O arquivo `article/tex_files/before-body.tex` contém o código LaTeX que gera a capa do artigo. Edite para se adequar às suas necessidades.
+O arquivo `article/tex_files/before-body.tex` contém o código LaTeX que gera a capa do artigo. Edite para se adequar às suas necessidades. É Aqui que você edita sobre as informações sobre agradecimento, dedicatoria, resumo etc.
+
+
 
 O arquivo `article/tex_files/doc_class.tex` contém todos os pacotes, funções e definições do projeto LaTeX. É possível incrementar bibliotecas por lá.
 
@@ -90,6 +92,7 @@ O arquivo `article/tex_files/doc_class.tex` contém todos os pacotes, funções 
 
 ## Como utilizar 🧑‍🏫
 Clone o repositório:
+
 ```{sh}
 git clone https://github.com/elianacardoso1/TCC_Quarto.git
 ```
