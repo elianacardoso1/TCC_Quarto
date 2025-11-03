@@ -49,8 +49,99 @@ output:
 
 # INTRODUÇÃO
 
+## Inclusão e Numeração de Figuras e Tabelas
 
-#RESULTADO
+No desenvolvimento deste trabalho, a apresentação de figuras e tabelas seguiu uma estrutura padronizada que garante coerência, rastreabilidade e clareza para o leitor. Cada figura ou tabela foi inserida utilizando chunks do R Markdown/Quarto, com os parâmetros fig-cap (para figuras) ou tbl-cap (para tabelas) e label. Essa abordagem permite a numeração automática e a criação de referências consistentes ao longo do texto.
+
+Por exemplo, uma figura ilustrando curvas de Kaplan-Meier por sexo foi incluída da seguinte forma:
+
+
+```{r}
+#| fig-cap: "Curvas de Kaplan-Meier simuladas por grupo"
+#| label: fig-fig2-simulado
+
+library(survival)
+
+# Gerando dados simulados
+set.seed(123)
+n <- 100
+tempo <- rexp(n, rate = 0.05)        # tempos de seguimento aleatórios
+status <- rbinom(n, 1, 0.7)          # evento ocorreu ou censura
+grupo <- sample(c("A", "B"), n, replace = TRUE)  # dois grupos aleatórios
+
+dados_sim <- data.frame(tempo = tempo, status = status, grupo = grupo)
+
+# Ajustando modelo Kaplan-Meier
+km_sim <- survfit(Surv(tempo, status) ~ grupo, data = dados_sim)
+
+# Plotando
+plot(km_sim, col = c("red", "blue"), xlab = "Tempo (dias)",
+     ylab = "Probabilidade de sobrevivência")
+legend("bottomleft", legend = c("Grupo A", "Grupo B"),
+       col = c("red", "blue"), lty = 1, bty = "n")
+
+```
+
+
+
+
+
+```{r}
+#| tbl-cap: "Resumo de eventos por grupo (simulado)"
+#| label: tbl-tabela-simulada
+
+library(dplyr)
+library(knitr)
+
+# Criando tabela de resumo
+tabela_sim <- dados_sim %>%
+  group_by(grupo) %>%
+  summarise(
+    Total = n(),
+    Eventos = sum(status),
+    Censuras = sum(1 - status),
+    .groups = 'drop'
+  )
+
+# Exibindo a tabela
+kable(tabela_sim, align = "c")
+
+```
+
+
+Para fazer referencia da tabela do texto Usa tbl-(nome) e fig-(nome) para que a tabela apareça numerada e possa ser referenciada automaticamente no PDF:
+
+
+Como mostrado na Tabela @tbl-tabela-simulada, o Grupo A apresentou maior número de eventos.
+
+
+## Latex
+
+
+Quando você coloca uma equação centralizada e destacada no texto, use dois sinais de dólar $$ ... $$:
+
+$$
+\mathbf{y} = \mathbf{X}\boldsymbol{\beta} + \mathbf{Z}\boldsymbol{\eta} + \boldsymbol{\varepsilon}
+$$
+
+Para inserir equações dentro do texto, use um único $:
+
+
+A equação da regressão linear é $y = X \beta + \varepsilon$.
+
+Exemplos comuns:
+
+
+
+- Fração: $$ \frac{a}{b} $$
+- Raiz quadrada: $$ \sqrt{x} $$
+- Integral: $$ \int_0^1 x^2 dx $$
+
+
+
+# RESULTADO
+
+
 
 
 # CONCLUSÃO
